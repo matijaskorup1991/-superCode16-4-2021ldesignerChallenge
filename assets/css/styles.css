@@ -75,3 +75,9 @@ header p {
   color: #ff3571;
   padding: 4rem 0 0 4rem;
 }
+
+#gallery {
+  background: url("../img/images.jpg") no-repeat center/cover;
+  background-size: 100% 84%;
+  height: 100vh;
+}
