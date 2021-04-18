@@ -21,6 +21,14 @@ ul {
   margin-left: 1rem;
 }
 
+li {
+  padding: 0.4rem 0;
+}
+
+li > p {
+  line-height: 30px;
+}
+
 header {
   padding-top: 1rem;
 }
@@ -146,13 +154,6 @@ header p {
   display: flex;
 }
 
-li {
-  padding: 0.4rem 0;
-}
-
-li > p {
-  line-height: 30px;
-}
 #ready > h2 {
   font-size: 3.5rem;
   text-align: center;
