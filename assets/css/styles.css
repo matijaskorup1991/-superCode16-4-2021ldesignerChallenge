@@ -252,11 +252,30 @@ li > p {
 .end div:hover {
   background-image: linear-gradient(to right, #ff3571, #3c30ff);
 }
+
+footer {
+  padding-bottom: 10px;
+}
+
+.rot {
+  display: inline-block;
+  animation: rotation 4s infinite linear;
+}
+
 @keyframes fly {
   from {
     bottom: 75px;
   }
   to {
     bottom: 30px;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }
