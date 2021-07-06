@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 /* Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
 
 * {
@@ -8,12 +8,11 @@
 }
 
 html {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -37,11 +36,12 @@ header > img {
   width: 30px;
   height: 35px;
   position: fixed;
+  left: 1rem;
 }
 
 header > div {
   display: inline-block;
-  padding-left: 2.5rem;
+  padding-left: 3rem;
 }
 
 header p {
@@ -49,9 +49,9 @@ header p {
 }
 
 #hero {
-  background: url("../img/ilustracion1.png") no-repeat right top;
+  background: url('../img/ilustracion1.png') no-repeat right top;
   background-size: 60% 70%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #hero > article {
@@ -66,6 +66,7 @@ header p {
   bottom: 75px;
   right: 60px;
   animation: fly 3s ease-in-out infinite;
+  object-fit: cover;
 }
 
 .heroContent h1 {
@@ -90,14 +91,14 @@ header p {
 }
 
 #gallery {
-  background: url("../img/images.jpg") no-repeat center/cover;
+  background: url('../img/images.jpg') no-repeat center/cover;
   background-size: 100% 84%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #idea,
 #ready {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 10rem;
 }
 
@@ -179,7 +180,7 @@ header p {
 }
 
 #go article {
-  height: 60vh;
+  min-height: 60vh;
   margin: 10vh 0;
   display: flex;
 }
@@ -278,5 +279,47 @@ footer {
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  #idea aside h2 {
+    font-size: 3rem;
+  }
+  #idea h2 {
+    font-size: 3rem;
+  }
+  .ideaImg {
+    display: inline-block;
+    width: 3rem;
+  }
+  .ideaImg > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  #idea article {
+    flex-direction: column;
+  }
+  #idea > article > aside:nth-of-type(1),
+  #idea > article > aside:nth-of-type(2) {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 3rem;
+    padding-top: 10vh;
+  }
+  #hero > article {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 4rem;
+  }
+  #idea h2 {
+    width: 100%;
   }
 }
