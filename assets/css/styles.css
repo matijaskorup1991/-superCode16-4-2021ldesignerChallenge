@@ -310,6 +310,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  #ready {
+    padding: 0 4rem;
+  }
   .heroContent h1 {
     font-size: 3rem;
     padding-top: 10vh;
@@ -319,7 +322,51 @@ footer {
     justify-content: space-evenly;
     padding-right: 4rem;
   }
+  #idea {
+    padding: 0 4rem;
+  }
   #idea h2 {
     width: 100%;
+  }
+
+  #ready article {
+    padding-top: 0;
+  }
+
+  #ready article div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .howToStart {
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  #go article {
+    flex-direction: column;
+    align-items: center;
+  }
+  #go article:nth-of-type(even) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .end > h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #go article aside {
+    width: 100%;
+  }
+  .end > h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .end input {
+    font-size: 0.8rem;
+  }
+  .end div {
+    width: 40%;
   }
 }
